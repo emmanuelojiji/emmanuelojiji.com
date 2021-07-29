@@ -19,6 +19,7 @@
                                   supported by Chrome, Edge, Opera and Firefox */
   cursor: default;
   -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 
 html,
@@ -181,16 +182,10 @@ main .image-wrap img {
   max-height: 100%;
 }
 
-main p {
-  color: white;
-  text-align: center;
-  display: inline;
-  font-family: sans-serif;
-  font-size: 12px;
-  margin-top: 6px;
-}
-
-aside {
+.start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: rgba(48, 48, 48, 0.8);
   -webkit-backdrop-filter: blur(50px);
           backdrop-filter: blur(50px);
@@ -198,10 +193,105 @@ aside {
   width: 60%;
   position: absolute;
   bottom: 0;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  /*transform: translateY(100%);*/
   -webkit-transition: ease 0.05s;
   transition: ease 0.05s;
+  padding-top: 28px;
+}
+
+.start h5 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.start .start-menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.start .start-menu .start-menu-icon-wrap {
+  height: 45px;
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start .start-menu .start-menu-icon-wrap:hover {
+  background-color: #474747;
+}
+
+.start .start-menu img {
+  width: 20px;
+}
+
+.start .start-folders {
+  height: 100%;
+  width: 30%;
+  padding-left: 16px;
+}
+
+.start .start-folder-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 4px;
+}
+
+.start .start-folder-wrap:hover {
+  background-color: #474747;
+}
+
+.start .start-folder-wrap figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d87d5;
+  min-width: 34px;
+  min-height: 34px;
+  margin-right: 8px;
+}
+
+.start .start-folder-wrap figure img {
+  height: 20px;
+}
+
+.start p {
+  white-space: nowrap;
+  color: white;
+  text-align: center;
+  display: inline;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.start .coming-soon {
+  height: 100%;
+  width: 50%;
 }
 
 .folder-wrap {
@@ -214,6 +304,15 @@ aside {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 460px;
+}
+
+.folder-wrap p {
+  color: white;
+  text-align: center;
+  display: inline;
+  font-family: sans-serif;
+  font-size: 12px;
+  margin-top: 6px;
 }
 
 iframe {
