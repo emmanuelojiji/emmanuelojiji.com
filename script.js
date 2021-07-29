@@ -1,22 +1,22 @@
 window.onload = () => {
-  const menu = document.querySelector(".menu");
+  const start = document.querySelector(".start");
   const windowsButton = document.querySelector(".windows-icon-wrap");
   const windowsIcon = document.querySelector(".windows-icon");
 
   windowsButton.onclick = () => {
-    if (menu.style.display == "block") {
+    if (start.style.display == "flex") {
       windowsButton.style.backgroundColor = "transparent";
 
       setTimeout(() => {
-        menu.style.display = "none";
-      }, 50);
+        start.style.display = "none";
+      }, 100);
 
-      menu.style.transform = "translateY(100%)";
+      start.style.transform = "translateY(100%)";
     } else {
-      menu.style.display = "block";
+      start.style.display = "flex";
 
       setTimeout(() => {
-        menu.style.transform = "translateY(0%)";
+        start.style.transform = "translateY(0%)";
       }, 50);
 
       windowsButton.style.backgroundColor = "#474747";
@@ -33,7 +33,7 @@ window.onload = () => {
 
   const browser = document.querySelector(".browser");
   const iframe = document.querySelector(".iframe");
-  const folder = document.querySelectorAll(".folder-text-wrap");
+  const folder = document.querySelectorAll(".file-folder");
   const chrome = document.querySelector('.chrome');
   const closeButton = document.querySelector('.close');
 
