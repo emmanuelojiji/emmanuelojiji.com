@@ -92,14 +92,49 @@ main {
   width: 24px;
 }
 
+.taskbar .search-wrap {
+  position: relative;
+  height: 100%;
+  width: 344px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 469px) {
+  .taskbar .search-wrap {
+    width: auto;
+  }
+}
+
+.taskbar .search-wrap img {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  margin-left: 12px;
+}
+
 .taskbar input {
   height: 100%;
   width: 100%;
   max-width: 344px;
   background-color: #353535;
   border: solid 1px #5d5d5d;
-  padding-left: 12px;
   color: #d6d6d6;
+  padding-left: 40px !important;
+}
+
+@media only screen and (max-width: 469px) {
+  .taskbar input {
+    width: auto;
+    max-width: 0;
+  }
 }
 
 .taskbar input::-webkit-input-placeholder {
