@@ -31,35 +31,6 @@ window.onload = () => {
     };
   };
 
-  const browser = document.querySelector(".browser");
-  const iframe = document.querySelector(".iframe");
-  const folder = document.querySelectorAll(".file-folder");
-  const chrome = document.querySelector('.chrome');
-  const closeButton = document.querySelector('.close');
 
-  const showBrowser = (e) => {
-    browser.style.display = "block";
-    iframe.src = e.currentTarget.getAttribute("data-website-link");
-    chrome.style.display = 'block';
 
-    setTimeout(() => {
-      chrome.style.opacity = '1'
-
-    });
-  };
-
-  for (let i = 0; i < folder.length; i++) {
-    folder[i].onclick = (e) => {
-      showBrowser(e);
-    };
-  }
-
-  closeButton.onclick = () => {
-    browser.style.display = 'none';
-    chrome.style.opacity = '0';
-
-    setTimeout(() => {
-      chrome.style.display = 'none'
-    },300);
-  }
 };
