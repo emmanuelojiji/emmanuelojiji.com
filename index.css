@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background: #f8f9fa;
+  background: #ffffff;
+  scroll-behavior: smooth;
+}
+
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+p {
+  line-height: 25px;
+}
+
+header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+header .header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo {
+  font-weight: bold;
+  font-size: 1.6em;
+  letter-spacing: -2px;
+}
+header nav a {
+  padding: 12px;
+  font-size: 0.8em;
+  color: black;
+}
+
+.billboard {
+  padding-top: 250px;
+  padding-bottom: 250px;
+}
+.billboard .billboard-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.billboard h1 {
+  font-size: 3em;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: -3px;
+}
+
+.brands {
+  padding-bottom: 250px;
+}
+.brands .brands-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brands img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.explore {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.explore .explore-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.explore h3 {
+  margin-bottom: 30px;
+  font-size: 3em;
+  letter-spacing: -3px;
+}
+.explore a {
+  margin-bottom: 15px;
+}
+
+footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: #e7e9e9;
+}/*# sourceMappingURL=index.css.map */
