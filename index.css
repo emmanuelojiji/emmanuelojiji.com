@@ -35,6 +35,11 @@ header .header-wrap {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 600px) {
+  header .header-wrap {
+    flex-direction: column;
+  }
+}
 header .logo {
   font-weight: bold;
   font-size: 1.6em;
@@ -50,6 +55,12 @@ header nav a {
   padding-top: 250px;
   padding-bottom: 250px;
 }
+@media only screen and (max-width: 768px) {
+  .billboard {
+    padding-top: 125px;
+    padding-bottom: 125px;
+  }
+}
 .billboard .billboard-wrap {
   height: 100%;
   display: flex;
@@ -61,6 +72,11 @@ header nav a {
   text-align: center;
   font-family: "Work Sans", sans-serif;
   letter-spacing: -3px;
+}
+@media only screen and (max-width: 768px) {
+  .billboard h1 {
+    font-size: 2em;
+  }
 }
 
 .brands {
@@ -84,13 +100,25 @@ header nav a {
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 600px) {
+  .explore .explore-wrap {
+    align-items: center;
+    text-align: center;
+  }
+}
 .explore h3 {
   margin-bottom: 30px;
   font-size: 3em;
   letter-spacing: -3px;
 }
+@media only screen and (max-width: 768px) {
+  .explore h3 {
+    font-size: 2em;
+  }
+}
 .explore a {
   margin-bottom: 15px;
+  color: #191919;
 }
 
 footer {
